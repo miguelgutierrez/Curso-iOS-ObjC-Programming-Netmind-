@@ -1,0 +1,4 @@
+- https://github.com/nst/STTwitter
+* compilar los ficheros de STTwitter con -fno-objc-arc
+* he quitado DEBUG
+

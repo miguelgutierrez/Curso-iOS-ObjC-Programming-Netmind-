@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>780E9935-C8F9-4093-A454-6B19598D113F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>newsApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2ECEDD728CD3E61427889A49EB2E26EE79D94ECC</key>
+		<string>https://github.com/miguelgutierrez/Curso-iOS-Programming-Netmind.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>newsApp 1.2/newsApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2ECEDD728CD3E61427889A49EB2E26EE79D94ECC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/miguelgutierrez/Curso-iOS-Programming-Netmind.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2ECEDD728CD3E61427889A49EB2E26EE79D94ECC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2ECEDD728CD3E61427889A49EB2E26EE79D94ECC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Curso-iOS-ObjC-Programming-Netmind</string>
+		</dict>
+	</array>
+</dict>
+</plist>

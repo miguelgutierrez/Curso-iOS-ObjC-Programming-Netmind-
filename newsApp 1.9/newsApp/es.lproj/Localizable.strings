@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  newsApp
+
+  Created by Miguel Gutiérrez Moreno on 25/04/14.
+  Copyright (c) 2014 Espí & Le Barbier. All rights reserved.
+*/
+"AsuntoMail"="Article of %@";
+"TextoMail"="Writer: %@  Date: %@ \n Article: %@";
+"TextoTwitter"="Read article by: %@";
+"LecturasRealizadas"="You have read %i times";

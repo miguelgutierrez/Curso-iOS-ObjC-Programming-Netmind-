@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="11">
+            <objects>
+                <viewController title="First" id="2" customClass="ELBFirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="16">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="portada.png" id="yIS-Fo-9e0">
+                                <rect key="frame" x="0.0" y="20" width="320" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo.gif" id="pFF-Ej-8XN">
+                                <rect key="frame" x="157" y="163" width="121" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="jNb-2z-8hG">
+                                <rect key="frame" x="101" y="251" width="118" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="setTrasparencia:" destination="2" eventType="valueChanged" id="QRo-0t-7HJ"/>
+                                </connections>
+                            </slider>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="100" id="Ey7-P4-27b">
+                                <rect key="frame" x="113" y="479" width="94" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="setDuracionMovimiento:" destination="2" eventType="valueChanged" id="xGd-Je-Pz7"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Imágenes" image="first" id="7"/>
+                    <connections>
+                        <outlet property="portadaImageView" destination="yIS-Fo-9e0" id="Zex-MI-aiB"/>
+                        <outlet property="trasparenciaSlider" destination="jNb-2z-8hG" id="mrb-BB-tct"/>
+                        <outlet property="velocidadStepper" destination="Ey7-P4-27b" id="ONW-k0-tpx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="-138"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="13">
+            <objects>
+                <viewController title="Second" id="3" customClass="ELBCaptandoLaAtencionDelUsuarioVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PeK-ar-AOC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" id="Hcy-De-nD7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5qY-ru-ViC">
+                                        <rect key="frame" x="118" y="27" width="85" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Error">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="error:" destination="3" eventType="touchUpInside" id="VkQ-NC-nJO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fjc-Tc-oKw">
+                                        <rect key="frame" x="100" y="121" width="122" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Solicita Clave">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="solicitaClave:" destination="3" eventType="touchUpInside" id="64E-gJ-bnL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gqh-B9-SuX">
+                                        <rect key="frame" x="129" y="395" width="75" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Sonido">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sonido:" destination="3" eventType="touchUpInside" id="tdx-WF-PNu"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mensaje" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="62A-jZ-T2Y">
+                                        <rect key="frame" x="31" y="312" width="271" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Kw-VN-rdc">
+                                        <rect key="frame" x="107" y="217" width="108" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Compártelo">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="compartelo:" destination="3" eventType="touchUpInside" id="O1d-m2-1qy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xrI-1q-Q4d">
+                                        <rect key="frame" x="121" y="457" width="93" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Vibración">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="vibracion:" destination="3" eventType="touchUpInside" id="L1D-9N-e3h"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Atención" image="second" id="6"/>
+                    <connections>
+                        <outlet property="mensajeLabel" destination="62A-jZ-T2Y" id="1NV-pD-qHt"/>
+                        <outlet property="scrollView" destination="Hcy-De-nD7" id="101-qm-rmL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="498"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="15">
+            <objects>
+                <tabBarController id="4" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
+                        <segue destination="3" kind="relationship" relationship="viewControllers" id="27"/>
+                        <segue destination="KNJ-9A-GoV" kind="relationship" relationship="viewControllers" id="3Ya-jD-APk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="180"/>
+        </scene>
+        <!--Detector-->
+        <scene sceneID="p9F-mr-4cg">
+            <objects>
+                <viewController id="KNJ-9A-GoV" customClass="ELBMovimientoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j0J-88-PDP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="movimiento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R6a-cl-5Jn">
+                                <rect key="frame" x="14" y="51" width="276" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gestos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lTE-OD-QWA">
+                                <rect key="frame" x="14" y="283" width="276" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="IqK-4Q-gUj" appends="YES" id="KAz-JX-ozn"/>
+                            <outletCollection property="gestureRecognizers" destination="ckh-J2-U39" appends="YES" id="L1y-nl-wMr"/>
+                            <outletCollection property="gestureRecognizers" destination="uFy-bc-T5U" appends="YES" id="ptf-5T-AVh"/>
+                            <outletCollection property="gestureRecognizers" destination="8cf-LK-Ehk" appends="YES" id="d7E-JW-p85"/>
+                            <outletCollection property="gestureRecognizers" destination="UPH-gz-8KZ" appends="YES" id="hJX-F5-8NY"/>
+                            <outletCollection property="gestureRecognizers" destination="b7P-0q-rGZ" appends="YES" id="07g-q2-6JD"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Detector" id="4WY-rM-i7R"/>
+                    <connections>
+                        <outlet property="gestosLabel" destination="lTE-OD-QWA" id="BnK-oj-LLB"/>
+                        <outlet property="movimientoLabel" destination="R6a-cl-5Jn" id="Mu8-S0-4gf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vCZ-lX-28P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="IqK-4Q-gUj">
+                    <connections>
+                        <action selector="swipe:" destination="KNJ-9A-GoV" id="tZv-7h-JmR"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="ckh-J2-U39">
+                    <connections>
+                        <action selector="tap:" destination="KNJ-9A-GoV" id="fJT-Oc-HPx"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <rotationGestureRecognizer id="uFy-bc-T5U">
+                    <connections>
+                        <action selector="rotation:" destination="KNJ-9A-GoV" id="0Ge-Kn-mXY"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pinchGestureRecognizer id="8cf-LK-Ehk">
+                    <connections>
+                        <action selector="pinch:" destination="KNJ-9A-GoV" id="WIs-vC-GTr"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="UPH-gz-8KZ">
+                    <connections>
+                        <action selector="pan:" destination="KNJ-9A-GoV" id="ghU-ft-6xR"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="b7P-0q-rGZ">
+                    <connections>
+                        <action selector="longPress:" destination="KNJ-9A-GoV" id="YVX-Oy-vNs"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="403" y="1249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="16" height="16"/>
+        <image name="logo.gif" width="140" height="26"/>
+        <image name="portada.png" width="763" height="574"/>
+        <image name="second" width="16" height="16"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

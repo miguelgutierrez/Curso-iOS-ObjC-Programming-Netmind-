@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C1021" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Cliente" representedClassName="Cliente" syncable="YES">
+        <attribute name="nif" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="facturasDelCliente" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Factura" inverseName="clienteDeLaFactura" inverseEntity="Factura" syncable="YES"/>
+    </entity>
+    <entity name="ELBArticulo" representedClassName="ELBArticulo" syncable="YES">
+        <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="texto" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Factura" representedClassName="Factura" syncable="YES">
+        <attribute name="codigo" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="importe" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="clienteDeLaFactura" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cliente" inverseName="facturasDelCliente" inverseEntity="Cliente" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ELBArticulo" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Cliente" positionX="180" positionY="243" width="128" height="88"/>
+        <element name="Factura" positionX="198" positionY="261" width="128" height="88"/>
+    </elements>
+</model>
